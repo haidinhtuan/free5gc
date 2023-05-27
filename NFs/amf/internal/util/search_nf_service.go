@@ -45,6 +45,6 @@ func getSbiUri(scheme models.UriScheme, ipv4Address string, port int32) (uri str
 			uri = fmt.Sprintf("%s://%s:443", scheme, ipv4Address)
 		}
 	}*/
-	uri = fmt.Sprintf("http://localhost:8080")
+	uri = fmt.Sprintf("http://localhost:9999")
 	return
 }
