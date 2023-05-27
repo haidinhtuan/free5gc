@@ -35,7 +35,7 @@ func SearchNFServiceUri(nfProfile models.NfProfile, serviceName models.ServiceNa
 }
 
 func getSbiUri(scheme models.UriScheme, ipv4Address string, port int32) (uri string) {
-	/*if port != 0 {
+	if port != 0 {
 		uri = fmt.Sprintf("%s://%s:%d", scheme, ipv4Address, port)
 	} else {
 		switch scheme {
@@ -44,7 +44,7 @@ func getSbiUri(scheme models.UriScheme, ipv4Address string, port int32) (uri str
 		case models.UriScheme_HTTPS:
 			uri = fmt.Sprintf("%s://%s:443", scheme, ipv4Address)
 		}
-	}*/
-	uri = fmt.Sprintf("http://localhost:8080")
+	}
+	//uri = fmt.Sprintf("http://localhost:8080")
 	return
 }
