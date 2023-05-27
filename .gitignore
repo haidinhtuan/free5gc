@@ -29,8 +29,5 @@ bin/
 # release
 release/src
 
-# webconsole
-webconsole/bin
-
 packages/
 free5gc.zip
