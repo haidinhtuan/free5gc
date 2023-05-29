@@ -348,8 +348,13 @@ func getUdmUrl(nrfUri string) string {
 	} else {
 		logger.UeAuthPostLog.Errorln("[Search UDM UEAU] len(NfInstances) = 0")
 	}
+	udmUrl := "https://localhost:29503"
 	return udmUrl
 }
+
+/*func getUdmUrl(nrfUri string) string {
+	return "http://localhost:9999"
+}*/
 
 func createClientToUdmUeau(udmUrl string) *Nudm_UEAU.APIClient {
 	cfg := Nudm_UEAU.NewConfiguration()
