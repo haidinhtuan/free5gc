@@ -258,9 +258,6 @@ func (amf *AMF) Start() {
 		profile = profileTmp
 	}
 
-	var registerProfile = profile
-	registerProfile.SBIPort = 9999
-
 	if _, nfId, err := consumer.SendRegisterNFInstance(self.NrfUri, self.NfId, registerProfile); err != nil {
 		logger.InitLog.Warnf("Send Register NF Instance failed: %+v", err)
 	} else {
