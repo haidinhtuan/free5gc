@@ -258,7 +258,7 @@ func (amf *AMF) Start() {
 		profile = profileTmp
 	}
 
-	if _, nfId, err := consumer.SendRegisterNFInstance(self.NrfUri, self.NfId, registerProfile); err != nil {
+	if _, nfId, err := consumer.SendRegisterNFInstance(self.NrfUri, self.NfId, profile); err != nil {
 		logger.InitLog.Warnf("Send Register NF Instance failed: %+v", err)
 	} else {
 		self.NfId = nfId
